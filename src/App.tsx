@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import './App.css'
+import { useCart } from './hooks/useCart'
 
 // Import components
 import Navigation from './components/Navigation'
@@ -33,7 +34,8 @@ function App() {
   const [config, setConfig] = useState<EventConfig | null>(null)
   const [loading, setLoading] = useState(true)
   const [isCartOpen, setIsCartOpen] = useState(false)
-  const [selectedPackage, setSelectedPackage] = useState<'1day' | '2days' | null>(null)
+  
+  const { cart, addItem, removeItem, updateQuantity, clearCart, getPayPalDescription, isEmpty } = useCart();
 
   useEffect(() => {
     // Load configuration
@@ -93,13 +95,21 @@ function App() {
     setTimeout(() => clearInterval(interval), 5000)
   }, [])
 
-  const openCart = (packageType?: '1day' | '2days') => {
-    if (packageType) {
-      setSelectedPackage(packageType)
+  const handleAddToCartAndOpen = (packageType: '1day' | '2days') => {
+    addItem(packageType, 1);
+    setIsCartOpen(true);
+  };
+
+  const openCart = () => {
+    if (isEmpty) {
+      addItem('2days', 1);
     }
-    setIsCartOpen(true)
-  }
-  const closeCart = () => setIsCartOpen(false)
+    setIsCartOpen(true);
+  };
+
+  const closeCart = useCallback(() => {
+    setIsCartOpen(false)
+  }, [])
 
   if (loading) {
     return (
@@ -132,7 +142,7 @@ function App() {
       <Instructors instructors={config.instructors} />
       <Program program={config.program} onOpenCart={openCart} />
       <Testimonials testimonials={config.testimonials} onOpenCart={openCart} />
-      <Pricing pricing={config.pricing} onOpenCart={openCart} />
+      <Pricing pricing={config.pricing} onOpenCart={handleAddToCartAndOpen} />
       <FAQ faq={config.faq} onOpenCart={openCart} />
       <Footer contact={config.contact} event={config.event} />
       
@@ -141,8 +151,7 @@ function App() {
         isOpen={isCartOpen} 
         onClose={closeCart} 
         pricing={config.pricing}
-        selectedPackage={selectedPackage}
-        onPackageChange={setSelectedPackage}
+        cartState={{ cart, addItem, removeItem, updateQuantity, clearCart, getPayPalDescription, isEmpty }}
       />
     </div>
   )

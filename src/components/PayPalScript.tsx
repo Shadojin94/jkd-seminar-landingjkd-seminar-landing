@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { getPayPalScriptUrl, PAYPAL_CONFIG } from '../config/paypal'
 
 interface PayPalScriptProps {
   clientId: string;
@@ -19,8 +20,11 @@ const PayPalScript = ({ clientId }: PayPalScriptProps) => {
 
     // Create and load PayPal script
     const script = document.createElement('script')
-    script.src = `https://www.paypal.com/sdk/js?client-id=${clientId}&currency=EUR&locale=fr_FR`
+    script.src = getPayPalScriptUrl(clientId)
     script.async = true
+    
+    // Log environment for debugging
+    console.log(`PayPal Environment: ${PAYPAL_CONFIG.environment}`)
     
     script.onload = () => {
       console.log('PayPal SDK loaded successfully')
