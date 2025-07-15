@@ -1,0 +1,202 @@
+{
+  "event": {
+    "name": "Jun Fan Jeet Kune Do Seminar",
+    "tagline": "THE HERITAGE. THE ESSENCE. THE EVENT.",
+    "subtitle": "This seminar represents the core of Jun Fan Jeet Kune Do",
+    "dates": "August 30-31, 2025",
+    "location": {
+      "venue": "Warrior Strength Martial Arts",
+      "address": "1414 127th Pl NE #104, Bellevue, WA 98005, United States",
+      "city": "Bellevue, WA",
+      "phone": "+1 425-998-8610",
+      "reviews": "4,949 reviews"
+    },
+    "schedule": {
+      "day1": {
+        "date": "August 30, 2025",
+        "times": "1:00 PM - 5:00 PM"
+      },
+      "day2": {
+        "date": "August 31, 2025", 
+        "times": "10:00 AM - 3:00 PM"
+      }
+    }
+  },
+  "hero": {
+    "title": "THE HERITAGE. THE ESSENCE.",
+    "highlight": "THE EVENT.",
+    "subtitle": "This seminar represents the core of Jun Fan Jeet Kune Do",
+    "description": "Learn from Sifu Abe Santos and Sifu Greglon Yimm Lee - the authentic heirs of Bruce Lee's martial art.",
+    "ctaPrimary": "I RESERVE MY SPOT",
+    "ctaSecondary": "VIEW DETAILED PROGRAM",
+    "urgency": "Strictly limited spots • 2 days total immersion",
+    "backgroundImage": "/images/slide1.jpg"
+  },
+  "whyUnique": {
+    "title": "More than a seminar. A transmission.",
+    "problem": "Do you practice martial arts but feel like you're missing a connection to the source? Are you seeking the efficiency, fluidity, and authenticity of original Jeet Kune Do?",
+    "solution": "This seminar is a rare opportunity to receive direct teaching from Sifu Abe Santos and Sifu Greglon Yimm Lee, who hold knowledge from the purest lineage of Bruce Lee.",
+    "promise": "In two days, you won't just learn techniques. You'll integrate principles that will transform your practice, your philosophy, and your effectiveness.",
+    "uniquePoints": [
+      "Direct Bruce Lee lineage guaranteed",
+      "Secret techniques never taught publicly",
+      "Transmission of authentic JKD philosophy",
+      "Personal correction by the masters"
+    ]
+  },
+  "instructors": [
+    {
+      "name": "Sifu Abe Santos",
+      "title": "Seattle Jeet Kune Do",
+      "imageUrl": "/images/abe.png",
+      "featured": true,
+      "bio": "Co-founder of Jun Fan Gung Fu Academy, Sifu Abe Santos is a Senior Instructor directly certified by Taky Kimura. With decades of experience, he conducts seminars internationally and has been recognized by Linda Lee for preserving Bruce Lee's authentic teachings.",
+      "lineage": "Most faithful student of Taky Kimura",
+      "experience": "40+ years of teaching",
+      "philosophy": "\"I teach the art as I received it from Sigung Taky Kimura, who received it from Sijo Bruce Lee - direct, efficient and explosive, eliminating anything unnecessary.\"",
+      "specialties": ["Jun Fan Gung Fu fundamentals", "Stop Hit techniques", "Distance and redirection", "Energy management"]
+    },
+    {
+      "name": "Sifu Greglon Yimm Lee",
+      "title": "Oakland Jeet Kune Do",
+      "imageUrl": "/images/greglon_new.jpg",
+      "featured": true,
+      "bio": "Son of James Yimm Lee, Bruce Lee's historic training partner and close friend, Sifu Greglon carries on the family legacy with unparalleled expertise in trapping techniques and the original Oakland curriculum of Bruce Lee's art.",
+      "lineage": "Son of James Yimm Lee (Bruce Lee's partner)",
+      "experience": "50+ years of practice",
+      "philosophy": "\"Every movement must have a purpose, every technique absolute efficiency.\"",
+      "specialties": ["Advanced trapping", "Close combat", "Combat strategies"]
+    }
+  ],
+  "program": {
+    "title": "The Program: Deep Dive into JKD Core",
+    "subtitle": "A weekend of total immersion in Bruce Lee's authentic art",
+    "day1": {
+      "title": "Day 1: Jun Fan Gung Fu Basics",
+      "date": "August 30, 2025"
+    },
+    "day2": {
+      "title": "Day 2: Jeet Kune Do Fundamentals",
+      "date": "August 31, 2025"
+    }
+  },
+  "testimonials": [
+    {
+      "name": "Sebastien Espanan",
+      "location": "France",
+      "photoUrl": "/images/testimonial-1.jpg",
+      "rating": 5,
+      "comment": "I have been fortunate to meet Sifu Abe Santos and train under the lineage of Sigung Taky Kimura. Sifu Abe's teaching goes beyond technique, exploring the philosophy, directionality and efficiency of Jun Fan Gung Fu Jeet Kune Do.",
+      "highlight": "More than technique - philosophy and efficiency"
+    },
+    {
+      "name": "Leong Lim",
+      "location": "Sydney, Australia", 
+      "photoUrl": "/images/testimonial-2.jpg",
+      "rating": 5,
+      "comment": "As a certified instructor under Sigung Taky, Sifu Abe has a unique, individual and dynamic teaching style of the Jun Fan JKD curriculum. The key principle I learned: executing techniques directly, efficiently and explosively.",
+      "highlight": "Direct, efficient and explosive techniques"
+    },
+    {
+      "name": "Student Testimonial",
+      "location": "International",
+      "photoUrl": "/images/testimonial-3.jpg", 
+      "rating": 5,
+      "comment": "The authenticity of receiving teachings from Bruce Lee's direct lineage through Taky Kimura to Sifu Abe Santos is extraordinary. This is not just martial arts training - it's a transmission of Bruce Lee's original vision.",
+      "highlight": "Authentic Bruce Lee lineage"
+    }
+  ],
+  "pricing": {
+    "currency": "$",
+    "packages": [
+      {
+        "id": "2days",
+        "name": "2-Day Pass",
+        "price": 100,
+        "originalPrice": 120,
+        "recommended": true,
+        "description": "Complete access to all sessions, workshops, Q&A and photo session",
+        "features": [
+          "2 days of complete teaching",
+          "Access to both instructors",
+          "Photo session with masters",
+          "Participation certificate",
+          "Exclusive educational materials"
+        ],
+        "ctaText": "Choose Total Immersion",
+        "savings": "Save $20"
+      },
+      {
+        "id": "1day",
+        "name": "1-Day Pass",
+        "price": 60,
+        "description": "Access to one day of training of your choice",
+        "features": [
+          "1 day of teaching",
+          "Access to selected sessions",
+          "Q&A with instructors",
+          "Educational materials"
+        ],
+        "ctaText": "Reserve 1 Day"
+      }
+    ],
+    "paypalClientId": "Aex5Wg0fyCAAeeffxUAj_txFNd8yD4caFpY4vfIaeaGP58v0OLs0DYtjNAjFJjiLFF3bmfhc77nDvQRY",
+    "urgency": {
+      "text": "🔥 Already 75% of spots reserved!",
+      "subtext": "Don't wait, spots are strictly limited"
+    }
+  },
+  "faq": [
+    {
+      "question": "What level is required to participate?",
+      "answer": "The seminar is open to all levels. Beginners are welcome - our masters adapt their teaching to each participant. Martial arts experience is a plus but not required."
+    },
+    {
+      "question": "What should I bring?",
+      "answer": "Wear comfortable clothes for movement (martial arts attire recommended). We'll provide all necessary equipment. Just bring your motivation and open mind!"
+    },
+    {
+      "question": "Will there be videos or photos?",
+      "answer": "Yes! A professional photo session with the masters is included. Educational videos will also be made for your personal learning (with your consent)."
+    },
+    {
+      "question": "Can I get a refund?",
+      "answer": "We offer full refund up to 7 days before the event. Beyond that, we propose transfer to a future seminar under conditions."
+    },
+    {
+      "question": "Will certificates be issued?",
+      "answer": "Yes, all participants will receive a participation certificate signed by both masters, attesting to your training in authentic Jun Fan Jeet Kune Do art."
+    }
+  ],
+  "socialProof": {
+    "logos": [
+      {
+        "name": "Bruce Lee Foundation",
+        "imageUrl": "/images/bruce-lee-foundation-logo.png"
+      },
+      {
+        "name": "International JKD Federation", 
+        "imageUrl": "/images/jkd-federation-logo.png"
+      }
+    ],
+    "stats": [
+      {
+        "number": "500+",
+        "label": "Students trained"
+      },
+      {
+        "number": "40+",
+        "label": "Years of experience"
+      },
+      {
+        "number": "2",
+        "label": "Direct lineages"
+      }
+    ]
+  },
+  "contact": {
+    "email": "junfangungfuacademy@gmail.com",
+    "phone": "+1 425-998-8610",
+    "website": "https://seattlejkd.com"
+  }
+}
