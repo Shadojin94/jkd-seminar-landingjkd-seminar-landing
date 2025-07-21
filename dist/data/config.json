@@ -30,7 +30,7 @@
     "ctaPrimary": "I RESERVE MY SPOT",
     "ctaSecondary": "VIEW DETAILED PROGRAM",
     "urgency": "Strictly limited spots • 2 days total immersion",
-    "backgroundImage": "/images/slide1.jpg"
+    "backgroundImage": "./images/slide1.jpg"
   },
   "whyUnique": {
     "title": "More than a seminar. A transmission.",
@@ -48,7 +48,7 @@
     {
       "name": "Sifu Abe Santos",
       "title": "Seattle Jeet Kune Do",
-      "imageUrl": "/images/abe.png",
+      "imageUrl": "./images/abe.png",
       "featured": true,
       "bio": "Co-founder of Jun Fan Gung Fu Academy, Sifu Abe Santos is a Senior Instructor directly certified by Taky Kimura. With decades of experience, he conducts seminars internationally and has been recognized by Linda Lee for preserving Bruce Lee's authentic teachings.",
       "lineage": "Most faithful student of Taky Kimura",
@@ -59,7 +59,7 @@
     {
       "name": "Sifu Greglon Yimm Lee",
       "title": "Oakland Jeet Kune Do",
-      "imageUrl": "/images/greglon_new.jpg",
+      "imageUrl": "./images/greglon_new.jpg",
       "featured": true,
       "bio": "Son of James Yimm Lee, Bruce Lee's historic training partner and close friend, Sifu Greglon carries on the family legacy with unparalleled expertise in trapping techniques and the original Oakland curriculum of Bruce Lee's art.",
       "lineage": "Son of James Yimm Lee (Bruce Lee's partner)",
@@ -84,7 +84,7 @@
     {
       "name": "Sebastien Espanan",
       "location": "France",
-      "photoUrl": "/images/testimonial-1.jpg",
+      "photoUrl": "./images/testimonial-1.jpg",
       "rating": 5,
       "comment": "I have been fortunate to meet Sifu Abe Santos and train under the lineage of Sigung Taky Kimura. Sifu Abe's teaching goes beyond technique, exploring the philosophy, directionality and efficiency of Jun Fan Gung Fu Jeet Kune Do.",
       "highlight": "More than technique - philosophy and efficiency"
@@ -92,7 +92,7 @@
     {
       "name": "Leong Lim",
       "location": "Sydney, Australia", 
-      "photoUrl": "/images/testimonial-2.jpg",
+      "photoUrl": "./images/testimonial-2.jpg",
       "rating": 5,
       "comment": "As a certified instructor under Sigung Taky, Sifu Abe has a unique, individual and dynamic teaching style of the Jun Fan JKD curriculum. The key principle I learned: executing techniques directly, efficiently and explosively.",
       "highlight": "Direct, efficient and explosive techniques"
@@ -100,7 +100,7 @@
     {
       "name": "Student Testimonial",
       "location": "International",
-      "photoUrl": "/images/testimonial-3.jpg", 
+      "photoUrl": "./images/testimonial-3.jpg", 
       "rating": 5,
       "comment": "The authenticity of receiving teachings from Bruce Lee's direct lineage through Taky Kimura to Sifu Abe Santos is extraordinary. This is not just martial arts training - it's a transmission of Bruce Lee's original vision.",
       "highlight": "Authentic Bruce Lee lineage"
@@ -140,7 +140,7 @@
         "ctaText": "Reserve 1 Day"
       }
     ],
-    "paypalClientId": "Aex5Wg0fyCAAeeffxUAj_txFNd8yD4caFpY4vfIaeaGP58v0OLs0DYtjNAjFJjiLFF3bmfhc77nDvQRY",
+    "paypalClientId": "AYTQ54_joX4rcLj87eAFr6FG1C5aXRp2v3dt78BXm6NyabrQSXsnWB_piWDBquonEvrdO0SgHheTp5NY",
     "urgency": {
       "text": "🔥 Already 75% of spots reserved!",
       "subtext": "Don't wait, spots are strictly limited"
@@ -172,11 +172,11 @@
     "logos": [
       {
         "name": "Bruce Lee Foundation",
-        "imageUrl": "/images/bruce-lee-foundation-logo.png"
+        "imageUrl": "./images/bruce-lee-foundation-logo.png"
       },
       {
         "name": "International JKD Federation", 
-        "imageUrl": "/images/jkd-federation-logo.png"
+        "imageUrl": "./images/jkd-federation-logo.png"
       }
     ],
     "stats": [

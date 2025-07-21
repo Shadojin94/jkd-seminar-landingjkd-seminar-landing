@@ -1,7 +1,6 @@
-import { useEffect, useRef } from 'react'
-import CartItem from './CartItem'
-import AddToCartSection from './AddToCartSection'
-import { Cart } from '../types/cart'
+import { useEffect, useRef } from 'react';
+import { Cart, PASS_CONFIGS } from '../types/cart';
+import UnifiedCartItem from './UnifiedCartItem';
 
 // Define the type for the cart state and functions passed in props
 interface CartState {
@@ -94,6 +93,15 @@ const PayPalButton = ({ amount, description, isVisible }: { amount: number; desc
 const SideCart = ({ isOpen, onClose, pricing, cartState }: SideCartProps) => {
   const { cart, addItem, removeItem, updateQuantity, clearCart, getPayPalDescription, isEmpty } = cartState;
 
+  const handleQuantityChange = (type: '1day' | '2days', newQuantity: number) => {
+    const item = cart.items.find(i => i.type === type);
+    if (item) {
+      updateQuantity(item.id, newQuantity);
+    } else if (newQuantity > 0) {
+      addItem(type, newQuantity);
+    }
+  };
+  
   return (
     <>
       {isOpen && (
@@ -135,36 +143,21 @@ const SideCart = ({ isOpen, onClose, pricing, cartState }: SideCartProps) => {
               <p className="text-gray-400 text-sm">Warrior Strength Martial Arts, Bellevue WA</p>
             </div>
 
-            <AddToCartSection 
-              onAddItem={addItem}
-              currency={pricing.currency}
-            />
-
-            {!isEmpty && (
-              <div className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <h4 className="font-bold text-white">Your Cart</h4>
-                  <button
-                    onClick={clearCart}
-                    className="text-sm text-gray-400 hover:text-red-400 transition-colors"
-                  >
-                    Clear All
-                  </button>
-                </div>
-                
-                <div className="space-y-3">
-                  {cart.items.map((item) => (
-                    <CartItem
-                      key={item.id}
-                      item={item}
-                      onUpdateQuantity={updateQuantity}
-                      onRemove={removeItem}
-                      currency={pricing.currency}
-                    />
-                  ))}
-                </div>
-              </div>
-            )}
+            <div className="space-y-4">
+                <h4 className="font-bold text-white">Select Your Pass</h4>
+                <UnifiedCartItem
+                    type="1day"
+                    quantity={cart.items.find(i => i.type === '1day')?.quantity || 0}
+                    onQuantityChange={handleQuantityChange}
+                    currency={pricing.currency}
+                />
+                <UnifiedCartItem
+                    type="2days"
+                    quantity={cart.items.find(i => i.type === '2days')?.quantity || 0}
+                    onQuantityChange={handleQuantityChange}
+                    currency={pricing.currency}
+                />
+            </div>
 
             {isEmpty && (
               <div className="text-center py-8">
@@ -238,4 +231,4 @@ const SideCart = ({ isOpen, onClose, pricing, cartState }: SideCartProps) => {
   )
 }
 
-export default SideCart
+export default SideCart;

@@ -39,7 +39,7 @@ function App() {
 
   useEffect(() => {
     // Load configuration
-    fetch('/data/config.json')
+    fetch('./data/config.json')
       .then(response => response.json())
       .then(data => {
         setConfig(data)

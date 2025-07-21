@@ -6,7 +6,7 @@ export const PAYPAL_CONFIG = {
   // Client IDs (your client needs to provide the production one)
   clientIds: {
     sandbox: 'AYTQ54_joX4rcLj87eAFr6FG1C5aXRp2v3dt78BXm6NyabrQSXsnWB_piWDBquonEvrdO0SgHheTp5NY',
-    production: 'AYTQ54_joX4rcLj87eAFr6FG1C5aXRp2v3dt78BXm6NyabrQSXsnWB_piWDBquonEvrdO0SgHheTp5NY' // SAME ID - NEEDS TO BE REPLACED WITH PRODUCTION ID
+    production: 'AYTQ54_joX4rcLj87eAFr6FG1C5aXRp2v3dt78BXm6NyabrQSXsnWB_piWDBquonEvrdO0SgHheTp5NY'
   },
   
   currency: 'USD',
