@@ -33,7 +33,7 @@ const UnifiedCartItem = ({ type, quantity, onQuantityChange, currency }: Unified
           </div>
           <p className="text-sm text-gray-400">{config.description}</p>
           <div className="flex items-center space-x-2">
-            {config.originalPrice > config.price && (
+            {'originalPrice' in config && config.originalPrice > config.price && (
                 <span className="text-gray-500 line-through text-sm">
                     {currency}{config.originalPrice}
                 </span>

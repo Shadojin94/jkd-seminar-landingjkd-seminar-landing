@@ -1,0 +1,38 @@
+Cahier des charges - Amélioration PayPal et Panier
+🎯 Objectif principal
+Améliorer l'expérience utilisateur du système de panier existant sans casser le site.
+
+🔧 Améliorations demandées
+1. Éliminer la redondance interface
+Problème : Sections "Add passes" et "Your cart" séparées créent de la confusion
+Solution : Interface unifiée qui combine les deux
+Résultat attendu : Une seule section claire pour gérer le panier
+2. Mise à jour automatique des quantités
+Problème : Utilisateur doit cliquer sur "Add to Cart" après chaque changement
+Solution : Mise à jour automatique quand on change les quantités avec +/-
+Résultat attendu : Plus besoin de bouton "Add to Cart"
+3. Suppression automatique à quantité 0
+Problème : Articles restent dans le panier même à quantité 0
+Solution : Retrait automatique quand quantité = 0
+Résultat attendu : Panier se nettoie automatiquement
+4. Configuration PayPal de production
+Problème : S'assurer que PayPal utilise bien la production
+Client ID requis : AYTQ54_joX4rcLj87eAFr6FG1C5aXRp2v3dt78BX
+Résultat attendu : PayPal sécurisé pour vrais paiements
+5. Déploiement dans le bon dossier
+Problème : S'assurer que tout est dans le bon répertoire de production
+Solution : Validation et déploiement correct sur VPS Plesk
+Résultat attendu : Site fonctionne en production
+✅ Contraintes techniques
+Ne pas casser le site existant - Priorité absolue
+Garder le design actuel - Juste améliorer le comportement
+Compatible avec l'architecture React/Vite existante
+Fonctionne sur mobile et desktop
+🚫 Ce qu'il NE faut PAS faire
+Refaire tout le site
+Changer le design drastiquement
+Créer de nouveaux fichiers HTML complets
+Casser l'architecture React existante
+📁 Livrable attendu
+Solution minimale : 1-2 fichiers à ajouter/modifier qui améliorent le comportement du panier existant sans rien casser.
+

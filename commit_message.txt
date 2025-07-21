@@ -1,0 +1,8 @@
+feat: Refactor cart for improved UX
+
+This commit refactors the shopping cart to improve user experience.
+
+- Unifies the "Add to Cart" and "Your Cart" sections into a single, streamlined interface.
+- Implements automatic quantity updates, removing the need for a separate "Add to Cart" button.
+- Automatically removes items from the cart when their quantity is set to 0.
+- Updates PayPal configuration to use the production client ID.
