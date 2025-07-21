@@ -97,7 +97,7 @@ const Navigation = ({ onOpenCart }: NavigationProps) => {
         <div className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden ${
           isMobileMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
         }`}>
-          <div className="py-4 space-y-4 border-t border-gray-800 mt-4">
+          <div className="py-4 space-y-4 border-t border-gray-800 mt-4 bg-black/95 backdrop-blur-sm rounded-lg">
             <button 
               onClick={() => scrollToSection('program')}
               className="block w-full text-left text-gray-300 hover:text-yellow-400 transition-colors py-2"
